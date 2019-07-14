@@ -229,7 +229,6 @@ img {
 		margin-top: 20px;
 		display: block;
 		padding: 20px;
-
 	}
 
 	.hide-menu-btn{
@@ -326,9 +325,11 @@ img {
 
 @media only screen and (max-width: 505px) {
 	.menu{
-		position: fixed;
-		width: 120%;
+		width: 110%;
 		right: -1400%;
+	}
+	.menu a{
+		margin-top: 1px;
 	}
 	.search {
 		margin-right: 20%;
@@ -350,7 +351,9 @@ img {
 	}
 }
 @media only screen and (max-width: 355px){
-	
+	.menu{
+		width: 120%;
+	}
 	.header{
 	background:linear-gradient(50deg,#ffffff 50%,#a89d00 51%);
     }
