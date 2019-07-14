@@ -1,35 +1,52 @@
-
 @font-face {
 	font-family: normal;
-	src:url(../fonts/pantonmtav3-bold.ttf);
+	src:url(../fonts/caps.ttf);
 }
 *{
 	margin:0;
 	padding: 0;
+	text-decoration: none;
 }
-.header{
-	height: 100px;
-	padding: 0 20px;
 
+.header{
+	height: 80px;
+	padding: 0 20px;
+	background:linear-gradient(50deg,#ffffff 30%,#a89d00 30.3%);
 }
 .logo{
-	margin-top: 10px;
-	margin-left: 20px;
-	width: 160px;
-	height: 90px;
+	position: absolute;
+	margin-top: 25px;
+	margin-left: 5%;
+	font-size: 40px;
+	color: #a89d00;
+	text-transform: none;
+	font-family: 'Sacramento', cursive;
 
 }
-
+.all{
+	color: black
+}
 .menu{
 	float:right;
 	line-height: 100px;
+	margin-top: -10px;	
+	margin-right: 20%;
 }
-.menu a{
-	font-size: 20px; 
+.menu a{	color: white;
+	font-size: 15px; 
 	text-decoration: none;
-	padding: 0 10px;
+	padding: 0 40px;
+	font-family: normal;
 }
-	
+.search{
+	position: absolute;
+	color: white;
+	top: 33px;
+	right: 5%;
+	cursor: pointer;
+}
+
+
 .show-menu-btn, .hide-menu-btn{
 	font-size: 30px;
 	cursor: pointer;
@@ -45,7 +62,8 @@
 .menu a:hover,
 .show-menu-btn:hover,
 .hide-menu-btn:hover {
-	color: chocolate;
+	color: black;
+	transition: 600ms;
 }
 
 #chk{
@@ -53,51 +71,160 @@
 	visibility: hidden;
 	z-index: -1111;
 }
-.content{
-	padding: 0 20px;
+.main{
+	background:linear-gradient(50deg,#0d0d0c 40%,#ffffff 40.3%);
+}
+.slideshow-container{
+	left: -18%;
+}
+.mySlides {display: none;}
+img {
+	vertical-align: left;
+	height: 35%;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
-.content img{
-	display: flex;
-	align-items: center;
-	width: 100%;
-	max-width: 700px;
-	margin: 20px 0;
+/* Slideshow container */
+.slideshow-container {
+  width:60%;
+  position: relative;
+  margin: auto;
 }
 
-.content p{
-	text-align: justify;
-	margin-bottom: 25px;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #6a6402;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-footer{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: chocolate;
-	height: 50px;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: right;
+  right: 50px;
 }
 
 
-@media only screen and (max-width: 600px){
 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.slogan{
+	position: absolute;
+    left: 69%;
+	top: 140px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 25px;
+	color: #7a7402;
+
+
+}
+.slogan-h1{
+	margin-bottom: 50px;
+	font-family: normal;
+}
+.aboutus{
+	font-size: 20px;
+	color: white;
+	padding: 15px 20px 15px 20px;
+	background-color: #a89d00;	
+	border-radius: 5px;
+}
+.aboutus:hover{
+	border: 1px solid black;
+	color: #474406;
+	background-color: white;
+	transition: 1000ms;
+}
+
+@media only screen and (max-width: 1300px){
+	.slogan{
+			top: 120px;
+            left: 71%;
+} 
+		.slogan-h1{
+			font-size: 38px;
+			margin-bottom: 20px;
+		}
+}
+
+@media only screen and (max-width: 1100px){
+
+	.header{
+
+	background:linear-gradient(50deg,#ffffff 50%,#a89d00 51%);
+}
 	.show-menu-btn, .hide-menu-btn{
 		display: block;
-		margin-top: 25px;
+		color: white;
+		margin-top: -8px;
+		margin-right: 20px;
+	}
+	.search {
+		display: inline-block;
+		position: absolute;
+		margin-right: 15%;
 	}
 	.menu{
 		position: fixed;
-		width: 80%;
+		width: 40%;
 		height: 100%;
-		background: grey;
+		background:linear-gradient(20deg,#545454 20%,#adadad 99%);
 		right: -100%;
 		top: 0;
-		text-align: center;
+		text-align: left;
 		padding: 80px 0;
 		line-height: normal;
+		z-index: 11111;
 	}
-
+	.logo{
+		left: -11px;
+	}
 	.menu a{
 		margin-top: 20px;
 		display: block;
@@ -107,11 +234,142 @@ footer{
 
 	.hide-menu-btn{
 		position: absolute;
-		top: 40px;
-		right: 40px;
+		top: 43px;
+		margin-left: 20px;
 	}
 	#chk:checked ~ .menu{
-		right:0;
+		right:-220PX;
 
     }
+    .slogan{
+			top: 120px;
+            left: 70%;
+            line-height: 60px;
+    } 
+	.slogan-h1{
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+}
+
+
+@media only screen and (max-width: 820px) {
+
+	.menu{
+		position: fixed;
+		width: 60%;
+	}
+	.slideshow-container{
+		left: 5%;
+}
+	.mySlides {display: none;}
+	img {
+		vertical-align: left;
+		height: 35%;
+	
+}
+	.slideshow-container {
+	  	width:90%;
+	}
+	.slogan{
+		top: 140px;
+		left: 60%;
+        right: 10%;
+        line-height: 45px;
+	} 
+	.slogan-h1{
+		margin-bottom: 20px;
+	}
+		
+	.aboutus{
+		font-size: 15px;
+		color: white;
+		padding: 7px 10px 7px 10px;
+		background-color: #a89d00;	
+		border-radius: 5px;
+	}
+}
+@media only screen and (max-width: 625px) {
+	.menu{
+		position: fixed;
+		width: 80%;
+
+	}
+	.menu{
+		position: fixed;
+		width: 80%;
+	}
+	
+  	.prev, .next,.text   
+  		{font-size: 11px}
+
+  	.slogan{
+		top: 140px;
+		left: 47%;
+        right: 10%;
+        line-height: 40px;
+	} 
+	.slogan-h1{
+		margin-bottom: 20px;
+	}
+		
+	.aboutus{
+		font-size: 15px;
+		color: white;
+		padding: 7px 10px 7px 10px;
+		background-color: #a89d00;	
+		border-radius: 5px;
+	}
+
+
+}
+
+@media only screen and (max-width: 505px) {
+	.menu{
+		position: fixed;
+		width: 120%;
+		right: -1400%;
+	}
+	.search {
+		margin-right: 20%;
+	}
+	.slogan{
+		top: 130px;
+		left: 55%;
+        line-height: 30px;
+        
+	} 
+	.slogan-h1{
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+	.aboutus{
+		font-size: 13px;
+		padding: 7px 8px 7px 8px;
+	
+	}
+}
+@media only screen and (max-width: 355px){
+	
+	.header{
+	background:linear-gradient(50deg,#ffffff 50%,#a89d00 51%);
+    }
+    .search {
+		margin-right: 25%;
+	}
+	.slogan{
+		top: 125px;
+		left: 47%;
+        line-height: 30px;
+        
+	} 
+	.slogan-h1{
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+	.aboutus{
+		font-size: 13px;
+		padding: 7px 8px 7px 8px;
+	
+	}
 }

@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>menu</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/images/logoallwine.png"> 
+
+<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+<!--fonts end-->
 </head>
 <body>
 
 <div class="header">
-	<a href="index.html"><img class="logo" src="assets/images/logoallwine.png"></a>
+
+	    <a href="index.html"><p class="logo"><strong><span class="all">All</span>Wine</strong></p></a>
 
 
 	<input type="checkbox" id="chk">
@@ -19,11 +26,43 @@
 	<ul class="menu">
 		<a href="#">მთავარი</a>
 		<a href="#">პროდუქცია</a>
-		<a href="#">კონტაქტი</a>
+		<a href="#">კონტაქტი</a>		
 		<label for="chk" class="hide-menu-btn">
 			<i class="fas fa-times"></i>
 		</label>
+		
 	</ul>
+	<div class="search">
+		    <p></p>
+			<i class="fas fa-search"></i>
+		</div>
 </div>
+<div class="main">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="assets/images/wine1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="assets/images/wine2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="assets/images/wine3.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<div class="slogan">
+	<h1 class="slogan-h1">ყველა <br>  ღვინო ერთ <br> სივრცეში</h1>
+	<a class="aboutus" href="#">ჩვენს შესახებ</a>
+</div>
+</div>
+<script type="text/javascript" src="assets/js/allwine.js"></script>
+	
 </body>
+
 </html>
