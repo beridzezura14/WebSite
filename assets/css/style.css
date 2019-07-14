@@ -334,6 +334,9 @@ img {
 	.search {
 		margin-right: 20%;
 	}
+	.show-menu-btn{
+		margin-right: 5px;
+	}
 	.slogan{
 		top: 130px;
 		left: 55%;
