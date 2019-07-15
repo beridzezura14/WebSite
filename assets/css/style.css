@@ -72,7 +72,7 @@
 	z-index: -1111;
 }
 .main{
-	background:linear-gradient(50deg,#0d0d0c 50%,#ffffff 50.3%);
+	background:linear-gradient(50deg,#0d0d0c 40%,#ffffff 40.3%);
 }
 .slideshow-container{
 	left: -18%;
@@ -182,7 +182,87 @@ img {
 	background-color: white;
 	transition: 1000ms;
 }
+/****--------- wine section -------*****/
+.wine_section{
+	background:linear-gradient(0deg,grey 1%, white 99%);
+}
+.wine_head{
+	font-size: 40px;
+	font-family: normal;
+	text-align: right;
+	padding-right: 60px;
+	margin-top: 30px;
+	padding-top: 100px;
+}
+.wine_row{
+	display: flex;
+	margin-top: 100px;
+}
+.bottle{
+	order: -2;
+	width: 400px;
+	height: 600px;
+ 	padding-left: 5%;
+}
+.wine_description{
+	margin-top: 140px;
+}
+.wine_description h3{
+	font-size: 30px;
+	font-family: normal;
+	padding-left: 30px;
 
+}
+.color{
+	color: #a89d00;
+}
+.wine_description p{
+	text-align: justify;
+	width: 80%;
+	margin-top: 100px;	
+	line-height: 25px;
+}
+
+
+/*------------bottle 2------------*/
+
+.wine_description_2{
+	margin-left: 10%;
+	margin-top: 140px;
+}
+.wine_description_2 h3{
+	font-size: 30px;
+	font-family: normal;
+	padding-left: 30px;
+
+}
+.wine_description_2 p{
+	text-align: justify;
+	width: 90%;
+	margin-top: 100px;	
+	line-height: 25px;
+}
+
+/*---------- bottle 3-----------*/
+
+.bottle_3{
+	order: -2;
+	width: 500px;
+	height: 600px;
+ 	padding-left: 4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------responsive---------------*/
 @media only screen and (max-width: 1300px){
 	.slogan{
 			top: 120px;
@@ -259,6 +339,9 @@ img {
 		position: fixed;
 		width: 60%;
 	}
+	.main{
+	background:linear-gradient(50deg,#0d0d0c 55%,#ffffff 55.3%);
+}
 	.slideshow-container{
 		left: 5%;
 }
@@ -338,7 +421,7 @@ img {
 	.show-menu-btn{
 		margin-right: 5px;
 	}
-	
+
 	.slogan{
 		top: 130px;
 		left: 55%;
