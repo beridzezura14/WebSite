@@ -330,7 +330,7 @@ img {
 	}
 	#chk:checked ~ .menu{
 		right:-220PX;
-		transition: 1500ms;
+		transition: 1000ms;
 
     }
     .slogan{
