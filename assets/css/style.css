@@ -330,7 +330,7 @@ img {
 	}
 	#chk:checked ~ .menu{
 		right:-220PX;
-		transition: 2000ms;
+		transition: 1000ms;
 
     }
     .slogan{
@@ -523,6 +523,7 @@ img {
 	
 	}
 	.wine_head{
+		padding-top: 15px;
 		padding-right: 10px;
 	}
 	.bottle{
