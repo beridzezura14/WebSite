@@ -81,8 +81,6 @@
 img {
 	vertical-align: left;
 	height: 35%;
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -272,6 +270,29 @@ img {
 		height: 600px; 
 	}
 
+/*------------- footer -------------*/
+
+footer{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #181818;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.wine_name{
+	line-height: 35px;
+	padding-left: 50px;
+}
+.wine_name{
+	list-style-type: none;
+}
+.name, .name_more{	
+	color: grey
+}
+.name_more{
+	padding-left: 10px;
+}
 
 /*-------------responsive---------------*/
 @media only screen and (max-width: 1300px){
@@ -330,7 +351,7 @@ img {
 	}
 	#chk:checked ~ .menu{
 		right:-220PX;
-		transition: 1000ms;
+		transition: 800ms;
 
     }
     .slogan{
