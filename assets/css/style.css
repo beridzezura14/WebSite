@@ -280,13 +280,16 @@ footer{
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-.wine_name{
+.footer-row{
+	display: flex;
+}
+.wine_name, .wine_name-1{
 	line-height: 35px;
 	padding-left: 50px;
-}
-.wine_name{
+	padding:  0 70px;
 	list-style-type: none;
 }
+	
 .name, .name_more{	
 	color: grey
 }
@@ -294,6 +297,55 @@ footer{
 	padding-left: 10px;
 }
 
+.up {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.footer-up{
+	margin-right: 30px;
+	color: white;
+	font-size: 40px;
+}
+.footer-up:hover{
+	color: grey
+}
+.social{
+	display: flex;
+	position: absolute;
+	padding-top: 10px;
+	right: 20px;
+
+}
+.fb,
+.yt,
+.in{
+	padding: 0 20px;
+	color: white;
+}
+.fb:hover{
+	color: grey;
+}
+.yt:hover{
+	color: grey;
+}{
+	color: grey;
+}
+.in:hover{
+	color: grey;
+}
+.me{
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 50px;
+	
+}
+.last{
+	color: grey;
+}
+.myname{
+	color: black;
+}
 /*-------------responsive---------------*/
 @media only screen and (max-width: 1300px){
 	.slogan{
@@ -351,7 +403,7 @@ footer{
 	}
 	#chk:checked ~ .menu{
 		right:-220PX;
-		transition: 800ms;
+		transition: 600ms;
 
     }
     .slogan{
@@ -404,6 +456,9 @@ footer{
 		background-color: #a89d00;	
 		border-radius: 5px;
 	}
+	.wine_name-1{
+		display: none;
+ 	}
  /*-------------------wine section-----------------------*/
  	.wine_head{
  		line-height: 50px;
@@ -455,6 +510,8 @@ footer{
 		border-radius: 5px;
 	}
 
+	.wine_name, .wine_name-1{
+	padding-left: 20px;
 
 }
 
